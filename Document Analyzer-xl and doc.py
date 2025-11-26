@@ -12,7 +12,7 @@ import time
 
 # Load API key
 load_dotenv()
-genai.configure(api_key=os.environ['GEMINI_API_KEY'])
+genai.configure(api_key=st.secrets['GEMINI_API_KEY'])
 
 # Use Gemini 2.0 Flash (more generous limits)
 model = genai.GenerativeModel('models/gemini-2.0-flash')
@@ -253,4 +253,5 @@ def main():
         print("\n❌ Analysis failed. Please check the errors above.")
 
 if __name__ == "__main__":
+
     main()
