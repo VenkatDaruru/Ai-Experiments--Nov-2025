@@ -2,7 +2,7 @@
 MULTI-FORMAT DOCUMENT ANALYZER - With Retry Logic
 ==================================================
 """
-
+import streamlit as st
 import google.generativeai as genai
 import os
 from dotenv import load_dotenv
@@ -255,3 +255,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+
